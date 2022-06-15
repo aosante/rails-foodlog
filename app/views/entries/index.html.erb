@@ -18,16 +18,16 @@
               <p class="italic">Logged <%= time_ago_in_words(entry.created_at) %> ago</p>
           </div>
         </div>
-        <div class="card-footer">
-          <%= link_to 'Show', entry, class: "card-footer-item" %>
-          <%= link_to 'Edit', edit_entry_path(entry), class: "card-footer-item" %>
-          <%= link_to 'Destroy', entry, method: :delete, data: { confirm: 'Are you sure?' }, class: "card-footer-item" %>
+        <div class="card-footer is-primary">
+          <%= link_to 'Show', entry, class: "card-footer-item has-text-primary" %>
+          <%= link_to 'Edit', edit_entry_path(entry), class: "card-footer-item has-text-primary" %>
+          <%= link_to 'Destroy', entry, method: :delete, data: { confirm: 'Are you sure?' }, class: "card-footer-item has-text-primary" %>
         </div>
       </div>
     </div>
   <% end %>
 </div>
 
-<%# <div class="columns is-centered mt-6"> %>
-  <%# <%= link_to "View all entries", archives_index_path, class: "button is-link is-outlined is-centered" %>
-<%# </div> %>
+<div class="columns is-centered mt-6">
+  <%= link_to "View all entries", archives_index_path, class: "button is-primary is-outlined is-centered" %>
+</div>
